@@ -37,7 +37,18 @@
           <section class="business">
             <div class="container">
               <h1 class="head">Эффективные решения для вашего бизнеса</h1>
-              <button class="order" type="button">Заказать услугу</button>
+              <button class="order" type="button" data-modal-open>Заказать услугу</button>
+             <div class="backdrop is-hidden" data-modal>
+                  <div class="modal">
+                    <button class="button-close" data-modal-close>
+                      <a href="" class="button-link">
+                        <svg class="work-svg-icon" width="11" height="11">
+                          <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
             </div>
           </section>
           <section class="section-work">
@@ -269,5 +280,6 @@
             </div>
         </div>
       </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
