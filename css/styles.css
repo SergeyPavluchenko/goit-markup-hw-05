@@ -232,6 +232,10 @@ ul{
     letter-spacing: 0.06em;
 }
 
+.modal-section{
+    display: none;
+}
+
 .backdrop{
     position: absolute;
     height: 100%;
