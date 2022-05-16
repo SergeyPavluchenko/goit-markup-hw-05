@@ -44,9 +44,10 @@ ul{
 }
 
 .header{
+    position: relative;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+    /* border-bottom: 1px solid #ECECEC; */
 }
 
 .header .container{
@@ -61,7 +62,6 @@ ul{
 .header-nav{
     display: flex;
     align-items: center;
-
 }
 
 .header-list{
@@ -97,12 +97,13 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-item:hover,
 .header-item:focus{
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -110,10 +111,29 @@ ul{
     color: #2196F3;
 }
 
+/* .header-item.current{
+    position: relative;
+} */
+
+.header-item.linea::after{
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    bottom: 0;
+}
+
+
 .header-contact-list{
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+
+.header-contact-li {
+    margin-right: 30px;    
 }
 
 
@@ -129,19 +149,17 @@ ul{
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-left: 30px;    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-contact-icon{
     fill: currentColor;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .header-contact:hover,
 .header-contact:focus{
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .business{
@@ -340,7 +358,7 @@ ul{
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.img-info + .img-info{
+.img + .img{
     margin-left: 30px;
 }
 
@@ -412,24 +430,24 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team-link:hover,
 .team-link:focus {
     background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .team-link-svg{
     fill: #AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team-link:hover .team-link-svg,
 .team-link:focus .team-link-svg{
     fill: #FFFFFF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .section-client{
@@ -468,24 +486,23 @@ ul{
     align-items: center;
     justify-content: center;
     background-position: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .client-link:hover,
 .client-link:focus{
     border-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .client-link-svg {
     fill: #AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover .client-link-svg,
 .client-link:focus .client-link-svg{
     fill: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .main h1{
@@ -506,13 +523,14 @@ ul{
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .btn-style:hover,
 .btn-style:focus {
     color: #FFFFFF;
     background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -539,6 +557,17 @@ ul{
     transform: translateY(0%);
 }
 
+.block{
+    display: block;
+    text-decoration: none;
+}
+
+.block:hover,
+.block:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .section-top-text{
     position: relative;
     overflow: hidden;
@@ -555,19 +584,8 @@ ul{
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.block{
-    display: block;
-    text-decoration: none;
-}
-
-.section-pictures:hover{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
 .section-link{
@@ -648,12 +666,13 @@ ul{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     margin-top: 9px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-contact:hover,
 .footer-contact:focus{
     color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info{
@@ -693,12 +712,13 @@ ul{
 
 .footer-link:not(:last-child){
     margin-left: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-link:hover,
 .footer-link:focus{
     background-color: #2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link{

@@ -18,7 +18,7 @@
           <nav class="header-nav">
             <a class="header-name" href="">Web<span class="header-logo">Studio</span></a>
               <ul class="header-list list">
-                  <li class="header-info"><a class="header-item text current" href="./index.html">Студия</a></li>
+                  <li class="header-info"><a class="header-item linea text current" href="./index.html">Студия</a></li>
                   <li class="header-info"><a class="header-item text" href="./portfolio.html">Портфолио</a></li>
                   <li class="header-info"><a class="header-item text" href="">Контакты</a></li>
               </ul>
@@ -38,19 +38,21 @@
             <div class="container">
               <h1 class="head">Эффективные решения для вашего бизнеса</h1>
               <button class="order" type="button" data-modal-open>Заказать услугу</button>
-             <div class="backdrop is-hidden" data-modal>
-                  <div class="modal">
-                    <button class="button-close" data-modal-close>
-                      <a href="" class="button-link">
-                        <svg class="work-svg-icon" width="11" height="11">
-                          <use href="./images/symbol-defs.svg#icon-Vector"></use>
-                        </svg>
-                      </a>
-                    </button>
-                  </div>
-                </div>
             </div>
           </section>
+        <section class="backdrop-section">
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-close" data-modal-close>
+                <a href="" class="button-link">
+                  <svg class="work-svg-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
           <section class="section-work">
             <div class="container">
               <h2>Наши приоритеты в работе</h2>
@@ -100,18 +102,24 @@
               <div class="container">
                 <h2 class="head-img">Чем мы занимаемся</h2>
                 <ul class="list-img list">
-                  <div class="img-info">
-                    <li class="img"><img class="img-size" src="./images/img-1.jpg" alt="планируем"  width="370" height="294"></li>
+                  <li class="img">
+                    <div class="img-info">
+                      <img class="img-size" src="./images/img-1.jpg" alt="планируем"  width="370" height="294">
                     <p class="img-text">Десктопные приложения</p>
                   </div>
-                  <div class="img-info">
-                    <li class="img"><img class="img-size" src="./images/img-2.jpg" alt="проверяем"  width="370" height="294"></li>
-                    <p class="img-text">Мобильные приложения</p>
-                  </div>
-                  <div class="img-info">
-                    <li class="img"><img class="img-size" src="./images/img-3.jpg" alt="ползуемся"  width="370" height="294"></li>
+                </li>
+                   <li class="img">
+                    <div class="img-info">
+                      <img class="img-size" src="./images/img-2.jpg" alt="проверяем"  width="370" height="294">
+                      <p class="img-text">Мобильные приложения</p>
+                    </div>
+                  </li>
+                  <li class="img">
+                    <div class="img-info">
+                      <img class="img-size" src="./images/img-3.jpg" alt="ползуемся"  width="370" height="294">
                     <p class="img-text">Дизайнерские решения</p>
                   </div>
+                </li>
                 </ul>
               </div>
             </section>
